@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="wew.jpg" class="logo">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Computer Science Student</p>
+                    <h1>Hi, I'm <span>Fayemidara</span></h1>
+                </div>
+            </div>
+        </div>
+        <!-- -------------------about------------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="eee.JPG" style="height: 500px;">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hi there! I'm Oluwafayemidara, a student studying Computer Science and 
+                            Mathematics. I'm really into Math and Data Science, and I know 
+                            my way around Python programming.
+                            I find it fascinating how math can help us understand
+                             the world, and I enjoy using Data Science tools to dig 
+                             into interesting problems. My goal is to use my skills to make a difference 
+                             and solve real-world challenges.</p>
+
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>Proficient in Python</li>
+                                <li><span>Web development</span><br>HTML, CSS, JavaScript</li>
+                                <li><span>Data Analysis</span><br>NumPy, Panda</li>
+                                <li><span>Database Management</span><br>Proficient in SQL</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>Oct. 2023 - Dec. 2023</span><br>Extern at Mobalytics</li>
+                                <li><span>Jun. 2022 - Aug. 2023</span><br>Academic Tutor at Parents'<br>
+                                Assisted Rudimentary Program</li>
+                                <li><span>Oct. 2023 - Present</span><br>Student Outreach Worker at<br>Medicaid Unwind</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2021</span><br>High School Diploma at<br>Ambassadors College Ile-Ife</li>
+                                <li><span>2027</span><br>BSc. at Grambling State University</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-----------------------portfolio--------------------------------------------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="web-2.JPG" style="height: 210px;">
+                    <div class="layer">
+                        <h3>Car Data</h3>
+                        <p>The CSV file contains the information required to purchase a car</p>
+                        <a href="cars.csv"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="wed.JPG" style="height: 210px;" alt="">
+                    <div class="layer">
+                        <h3>Web Automation</h3>
+                        <p>This Software automates the login process to a student's portal and extracts
+                            their grade for the semester
+                        </p>
+                        <a href="https://github.com/Faye-webdev/Ebenezer/blob/main/webauto.py"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="wed-1.JPG" alt="">
+                    <div class="layer">
+                        <h3>Web Scraping</h3>
+                        <p>This program extracts some car data from a website and transfers it to a 
+                            CSV file
+                        </p>
+                        <a href="https://github.com/Faye-webdev/Ebenezer/blob/main/car_choice.py"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+<!-----------------------contact--------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> sowemimooluwafayemidara06@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> (318)-224-3182</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/oluwafayemidara-sowemimo-a38774289"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/therapist_16/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://github.com/Faye-webdev/Ebenezer"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/oluwafayem34509"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="Resume__.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Fayemidara.</p>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/5403891816.js" crossorigin="anonymous"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx25ATajRGeVsh0fceJsTsCcpbWHHijYoMOevExVeh37ZwRY4yZU77NifrtHLQFbQjC/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = " "
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    </body>
+</html>
+
+
+
